@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+body{
+    
+    font-size: 15px;
+    font-weight: 400;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 704px){
+    .cards{
+        
+        flex-wrap: wrap;
+    }
+}
+.card1, .card2, .card3{
+    width: 307px;
+    height: 500px;
+    padding: 45px;
+    line-height: 1.5rem;
+}
+.cards h3{ 
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;   
+    font-size: 34px;
+    text-transform: uppercase;
+    padding: 45px 0px; 
+}
+.cards p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.cards .card_btn{
+    background: transparent;
+    padding: 15px 30px;
+    border: 2px solid white;
+    margin: 40px auto;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.card1 .card_btn:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+.card2 .card_btn:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+.card3 .card_btn:hover{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+.card1{background-color: hsl(31, 77%, 52%);}
+.card2{background-color: hsl(184, 100%, 22%);}
+.card3{background-color: hsl(179, 100%, 13%);}

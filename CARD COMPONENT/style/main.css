@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.wrapper{
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+    width: 1440px;
+    background-color: hsl(233, 47%, 7%);
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 444px;
+    width: 1104px;
+    background-color: hsl(244, 38%, 16%);
+    
+}
+@media screen and (max-width: 600px){
+    .card{
+        flex-direction: column-reverse;
+    }
+    .card .image{
+        width: 100hw;
+        background-position: center;
+        background-size: contain;
+    }
+}
+.text{
+    padding: 75px;
+    
+}
+.text h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 3rem;
+    width: 450px;
+}
+h1 span{
+    color:hsl(277, 64%, 61%);
+}
+.text p{
+    font-weight: 400;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+    width: 350px;
+}
+.image{
+    
+    background-image: url('../images/image-header-desktop.jpg');
+    width: 540px;
+    height: 444px;
+    
+}
+.image .tint{
+    background-color: rgba(78, 2, 126, 0.5);
+    width: 540px;
+    height: 444px;
+}
+.data{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px 0px 0px;
+    width: 350px;
+}
+.data1, .data2, .data3{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.stat{
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+}
